@@ -21,7 +21,7 @@ class MobileBankApiTestV6 {
     @Test
     void shouldReturnDemoAccounts() {
       given()
-          .spec(requestSpec) // со спецификацией проще (особенно когда много тестов)
+          .spec(requestSpec)
       .when()
           .get("/demo/accounts")
       .then()
